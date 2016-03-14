@@ -1,0 +1,63 @@
+<!--Артемьев Вадим ЭВТ-13 Лабораторная работа№1	-->	
+<html>
+	<head>
+		<!-- Заголовок страницы -->
+		<title>Моя страница</title> 
+		<!-- Тип кодировки документа -->		
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+		<link rel="stylesheet" href="D.css"/>
+	</head>
+
+	<!-- Тело-->
+	<body>
+		<!-- Заголовок начальной страницы-->
+		<p class="title">Регистрация</p>
+		<label class="l1">Введите свои данные для регистрации на сайте:</label><br><br>
+		<!-- Картинка -->
+		<div id="pic">
+			<img src='C:\\Users\magne_000\Desktop\TEMP\1.jpg'/>
+		</div>
+		
+		<!-- Форма, данные будут передаватся методом POST. В этой работе ничего не передается -->
+		
+		<form name="test" action="" method="post">	
+			<div id="test" class="containr">		
+			<!-- label for что бы при наводе на метку выделялось то, к чему она относится -->
+			<!-- Placeholder выдаёт подсказку, которая пропадает если начать ввод -->
+			<!-- name это название переменной, которую мы будем передавать с помощью POST -->
+			<!-- id связь для for -->
+			<p><label for="name">Ввод логина: </label>
+			<p><label for="mail">Ввод почты: </label>
+			<p><label for="tel" >Ввод телефона: </label>
+			<p><label for="date" class="en">Ввод даты: </label>
+			<p><label for="male" class="r">Мужской: </label>
+			<p><label for="female" class="r">Женский: </label>
+			<p><label for="pass">Пароль: </label>
+			<p><label for="age">Возраст: </label>
+			<p><label for="color">Ваш любимый цвет: </label>
+			<p><label for="check">Включить рассылку? </label>
+			</div>
+			
+			<div id="enter" class="contain">			
+			<p><input type="text" placeholder="Поле ввода" name="name" id="name"/>
+			<p><input type="email" placeholder="Example@gmail.com" name="mail" id="mail"/>
+			<p><input type="tel" placeholder="89503335465" name="tel" id="tel" maxlength=11/>
+			<p><input type="date" id="date">
+			<p><input type="radio" name="sex" id="male">
+			<p><input type="radio" name="sex" id="female">
+			<p><input type="password" name="pass" id="pass">
+			<p><input type="number" step="20" name="age" id="age">
+			<p><input type="color" name="color" id="color">
+			<p><input type="checkbox" name="check" id="check">
+			<!-- Выподающий список -->
+			<p><select name="news">
+				<option value="mail">Почта</option>
+				<option value="msg">Сообщение</option>
+			</select>
+			</div>
+			<p><input type="range" class="last"/>
+			<p><input type="submit" name="sub" value="Отправить данные" class="last">
+		</form>
+	</body>
+
+</html>
