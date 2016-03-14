@@ -1,45 +1,47 @@
-<!--Артемьев Вадим ЭВТ-13 Лабораторная работа№1	-->	
+<!--РђСЂС‚РµРјСЊРµРІ Р’Р°РґРёРј Р­Р’Рў-13 Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р°в„–1	-->	
 <html>
 	<head>
-		<!-- Заголовок страницы -->
-		<title>Моя страница</title> 
-		<!-- Тип кодировки документа -->		
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+		<!-- Р—Р°РіРѕР»РѕРІРѕРє СЃС‚СЂР°РЅРёС†С‹ -->
+		<title>РњРѕСЏ СЃС‚СЂР°РЅРёС†Р°</title> 
+		<!-- РўРёРї РєРѕРґРёСЂРѕРІРєРё РґРѕРєСѓРјРµРЅС‚Р° -->		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<link rel="stylesheet" href="D.css"/>
 	</head>
 
-	<!-- Тело-->
+	<!-- РўРµР»Рѕ-->
 	<body>
-		<!-- Заголовок начальной страницы-->
-		<p class="title">Регистрация</p>
-		<label class="l1">Введите свои данные для регистрации на сайте:</label><br><br>
-		<!-- Картинка -->
+		<!-- Р—Р°РіРѕР»РѕРІРѕРє РЅР°С‡Р°Р»СЊРЅРѕР№ СЃС‚СЂР°РЅРёС†С‹-->
+		<header><p class="title">Р РµРіРёСЃС‚СЂР°С†РёСЏ</p></header>
+		<article>
+		<label class="l1">Р’РІРµРґРёС‚Рµ СЃРІРѕРё РґР°РЅРЅС‹Рµ РґР»СЏ СЂРµРіРёСЃС‚СЂР°С†РёРё РЅР° СЃР°Р№С‚Рµ:</label><br><br>
+		<!-- РљР°СЂС‚РёРЅРєР° -->
 		<div id="pic">
 			<img src='C:\\Users\magne_000\Desktop\TEMP\1.jpg'/>
 		</div>
 		
-		<!-- Форма, данные будут передаватся методом POST. В этой работе ничего не передается -->
+		<!-- Р¤РѕСЂРјР°, РґР°РЅРЅС‹Рµ Р±СѓРґСѓС‚ РїРµСЂРµРґР°РІР°С‚СЃСЏ РјРµС‚РѕРґРѕРј POST. Р’ СЌС‚РѕР№ СЂР°Р±РѕС‚Рµ РЅРёС‡РµРіРѕ РЅРµ РїРµСЂРµРґР°РµС‚СЃСЏ -->
 		
+		<section>
 		<form name="test" action="" method="post">	
 			<div id="test" class="containr">		
-			<!-- label for что бы при наводе на метку выделялось то, к чему она относится -->
-			<!-- Placeholder выдаёт подсказку, которая пропадает если начать ввод -->
-			<!-- name это название переменной, которую мы будем передавать с помощью POST -->
-			<!-- id связь для for -->
-			<p><label for="name">Ввод логина: </label>
-			<p><label for="mail">Ввод почты: </label>
-			<p><label for="tel" >Ввод телефона: </label>
-			<p><label for="date" class="en">Ввод даты: </label>
-			<p><label for="male" class="r">Мужской: </label>
-			<p><label for="female" class="r">Женский: </label>
-			<p><label for="pass">Пароль: </label>
-			<p><label for="age">Возраст: </label>
-			<p><label for="color">Ваш любимый цвет: </label>
-			<p><label for="check">Включить рассылку? </label>
+			<!-- label for С‡С‚Рѕ Р±С‹ РїСЂРё РЅР°РІРѕРґРµ РЅР° РјРµС‚РєСѓ РІС‹РґРµР»СЏР»РѕСЃСЊ С‚Рѕ, Рє С‡РµРјСѓ РѕРЅР° РѕС‚РЅРѕСЃРёС‚СЃСЏ -->
+			<!-- Placeholder РІС‹РґР°С‘С‚ РїРѕРґСЃРєР°Р·РєСѓ, РєРѕС‚РѕСЂР°СЏ РїСЂРѕРїР°РґР°РµС‚ РµСЃР»Рё РЅР°С‡Р°С‚СЊ РІРІРѕРґ -->
+			<!-- name СЌС‚Рѕ РЅР°Р·РІР°РЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№, РєРѕС‚РѕСЂСѓСЋ РјС‹ Р±СѓРґРµРј РїРµСЂРµРґР°РІР°С‚СЊ СЃ РїРѕРјРѕС‰СЊСЋ POST -->
+			<!-- id СЃРІСЏР·СЊ РґР»СЏ for -->
+			<p><label for="name">Р’РІРѕРґ Р»РѕРіРёРЅР°: </label>
+			<p><label for="mail">Р’РІРѕРґ РїРѕС‡С‚С‹: </label>
+			<p><label for="tel" >Р’РІРѕРґ С‚РµР»РµС„РѕРЅР°: </label>
+			<p><label for="date" class="en">Р’РІРѕРґ РґР°С‚С‹: </label>
+			<p><label for="male" class="r">РњСѓР¶СЃРєРѕР№: </label>
+			<p><label for="female" class="r">Р–РµРЅСЃРєРёР№: </label>
+			<p><label for="pass">РџР°СЂРѕР»СЊ: </label>
+			<p><label for="age">Р’РѕР·СЂР°СЃС‚: </label>
+			<p><label for="color">Р’Р°С€ Р»СЋР±РёРјС‹Р№ С†РІРµС‚: </label>
+			<p><label for="check">Р’РєР»СЋС‡РёС‚СЊ СЂР°СЃСЃС‹Р»РєСѓ? </label>
 			</div>
 			
 			<div id="enter" class="contain">			
-			<p><input type="text" placeholder="Поле ввода" name="name" id="name"/>
+			<p><input type="text" placeholder="РџРѕР»Рµ РІРІРѕРґР°" name="name" id="name"/>
 			<p><input type="email" placeholder="Example@gmail.com" name="mail" id="mail"/>
 			<p><input type="tel" placeholder="89503335465" name="tel" id="tel" maxlength=11/>
 			<p><input type="date" id="date">
@@ -49,14 +51,18 @@
 			<p><input type="number" step="20" name="age" id="age">
 			<p><input type="color" name="color" id="color">
 			<p><input type="checkbox" name="check" id="check">
-			<!-- Выподающий список -->
+			<!-- Р’С‹РїРѕРґР°СЋС‰РёР№ СЃРїРёСЃРѕРє -->
 			<p><select name="news">
-				<option value="mail">Почта</option>
-				<option value="msg">Сообщение</option>
+				<option value="mail">РџРѕС‡С‚Р°</option>
+				<option value="msg">РЎРѕРѕР±С‰РµРЅРёРµ</option>
 			</select>
 			</div>
+			</section>
+			</article>
+			<footer>
 			<p><input type="range" class="last"/>
-			<p><input type="submit" name="sub" value="Отправить данные" class="last">
+			<p><input type="submit" name="sub" value="РћС‚РїСЂР°РІРёС‚СЊ РґР°РЅРЅС‹Рµ" class="last">
+			</footer>
 		</form>
 	</body>
 
