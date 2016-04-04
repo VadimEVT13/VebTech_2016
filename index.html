@@ -1,0 +1,75 @@
+<!--Артемьев Вадим ЭВТ-13 Лабораторная работа№1	-->	
+<html>
+	<head>
+		<!-- Заголовок страницы -->
+		<title>Моя страница</title> 
+		<!-- Тип кодировки документа -->		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+
+	<!-- Тело-->
+	<body>
+		<!-- Заголовок начальной страницы-->
+		<header><p class="title">Регистрация</p></header>
+		
+		<!-- Форма, данные будут передаватся методом POST. В этой работе ничего не передается -->
+		
+		<section>
+		<form name="test" action="" method="post">	
+		
+			<div class="box">
+				<label for="name" class="text">Ввод логина: </label>
+				<input type="text" name="name" id="name" required pattern="[A-z]{3,}" placeholder="Более 3 букв англ." />
+			</div>
+			
+			<div class="box">
+				<label for="mail" class="text">Ввод почты: </label>
+			    <input type="email" placeholder="Example@gmail.com" name="mail" id="mail" required/>
+			</div>
+			
+			<div class="box">
+				<label for="tel" class="text">Ввод телефона: </label> 
+				<input type="tel" placeholder="89503335465" name="tel" id="tel" pattern="[0-9]{11}" maxlength="11"/>
+			</div>
+			
+			<div class="box">
+				<label for="date" class="text">Ввод даты рождения: </label>
+				<input type="date" id="date">
+			</div>
+			
+			<div class="box">
+				<label for="male" class="text">Мужской пол: </label>
+				<input type="radio" name="sex" id="male">
+			</div>
+			
+			<div class="box">
+				<label for="female" class="text">Женский пол: </label>
+				<input type="radio" name="sex" id="female">
+			</div>
+			
+			<div class="box">
+				<label for="pass" class="text">Пароль: </label>
+				<input type="password" name="pass" id="pass" required>
+			</div>
+			
+			<div class="box">
+				<label for="color" class="text"> Ваш любимый цвет: </label>
+				<input type="color" name="color" id="color">
+			</div>
+			
+			<div class="box">
+				<label for="check" class="text">Включить рассылку? </label>
+				<input type="checkbox" name="check" id="check">
+			</div>
+			
+				<select name="news">
+					<option value="mail">Почта</option>
+					<option value="msg">Сообщение</option>
+				</select>
+			</section>
+			<input type="submit" name="sub" value="Отправить данные" class="last">
+		</form>
+	</body>
+
+</html>
