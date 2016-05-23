@@ -12,12 +12,12 @@
         public function __construct($args)
         {
             $mass = explode(";", $args);
-            $n = $mass[0];
-            $e = $mass[1];
-            $p = $mass[2];
-            $t = $mass[3];
-            $s = $mass[4];
-            $r = $mass[5];
+            $n  = $mass[0];
+            $e  = $mass[1];
+            $p  = $mass[2];
+            $t  = $mass[3];
+            $s  = $mass[4];
+            $r  = $mass[5];
             $ra = $mass[6];
             //$n, $e, $p, $t = null, $s = null, $r = null
             if(user::name_test($n))
@@ -158,6 +158,20 @@
                 return false;
         }
 
+		public static function getForm($arg)
+		{
+            include "massive.php";
+            $mass = explode(";", $arg);
+            $form = "<section><form name='test' action='t2.php' method='POST'>";
+            foreach ($mass as $p) 
+            {
+                $form = $form.$massiv[$p];
+            }
+            $form = $form."<input type='submit' name='sub' value='Отправить данные'' class='last'>
+            </form></section>";
+
+			return $form;
+		}
 
         //геттеры
         public function getName()
