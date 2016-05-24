@@ -1,0 +1,37 @@
+<section>
+	<form name = 'test' action='t2.php' method='POST'>
+			<div class="box">
+				<label for="name" class="text">Логин</label>
+				<input type="text" name="name" required pattern="[A-z]{3,}" placeholder="Более 3 букв англ."  />
+			</div>
+			<div class="box">
+				<label for="mail" class="text">Почта</label>
+				<input type="email" name="mail" required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="Example@gmail.com"  />
+			</div>
+			
+			<div class="box">
+				<label for="tel" class="text">Телефон</label>
+				<input type="tel" name="tel"  pattern="[0-9]{11}" placeholder="89503335465"  />
+			</div>
+			
+			<div class="box">
+				<label for="pass" class="text">Пароль</label>
+				<input type="password" name="pass" required pattern="[A-z0-9]{3,}" placeholder="mypass222"  />
+			</div>
+			
+			<div class="box">
+				<label for="sex" class="text">Мужчина</label>
+				<input type="radio" name="sex"  pattern= placeholder= value='1' />
+			</div>
+			
+			<div class="box">
+				<label for="sex" class="text">Женщина</label>
+				<input type="radio" name="sex"  pattern= placeholder= value='2' />
+			</div>
+			<select name=ras>
+				<option mail>Почта</option>
+				<option msg>Сообщение</option>
+			</select>
+</section>
+			<input type=submit name=sub value=Отправить данные class='last' />
+	</form>

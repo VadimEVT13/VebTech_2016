@@ -8,6 +8,8 @@
 	//{
 		echo "<br>Нельзя использовать символы \' и \\<br>";
 
+		echo $_POST['name'];
+
 		if($_POST['sex']==1)
 			$sex = 'M';
 		else
@@ -23,11 +25,8 @@
 		else
 			$ras = 'F'; 
 
-
-
-
 		$u = new user($_POST['name'].";".$_POST['mail'].";".$_POST['pass'].";".$_POST['tel'].
-			";".$sex.";".$ras,$_POST['news'].";");
+			";".$sex.";".$ras,$_POST['ras'].";");
 		$u->getStr();
 		$model = new Model();
 		if($model->save($u)==1)			

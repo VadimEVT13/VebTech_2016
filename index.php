@@ -45,13 +45,45 @@
 						background-color: red;'>
 						Вы слишком часто создаете пользователя</p>";
 			}
-			include "user.php";
-			$f = user::getForm();
-			echo $f;
+		?>
+
+		<?php
+			include 'formaddinput.php';
+			echo "<section>";
+			echo "<form name = 'test' action='t2.php' method='POST'>";
+			foreach ($massive as $arr) 
+			{
+				$n = $arr[0];
+				$t = $arr[1];
+				$r = $arr[2];
+				$pa =$arr[3];
+				$pl = $arr[4];
+				$text = $arr[5];
+				$v = $arr[6];
+				include 'input.html';
+			}
+			include 'formaddselect.php';
+			foreach ($massive2 as $arr) {
+				$n = $arr[0];
+				$v1 = $arr[1];
+				$v2 = $arr[2];
+				$t1 = $arr[3];
+				$t2 = $arr[4];
+				include 'select.html';
+			}
+			$t = 'submit';
+			$n = 'sub';
+			$v = "Отправить данные";
+			echo "</section>";
+			include 'submit.html';
+			
+			$_SESSION['key']=md5(session_id());
+			echo "<input type='hidden' id='identif' value='".$_SESSION['key']."'>";
+			
+			echo "</form>";
 		?>
 		<!--
 		<section>
-		
 		<form name="test" action="t2.php" method="POST">	
 		
 			<div class="box">
@@ -99,14 +131,14 @@
 					<option value="msg">Сообщение</option>
 				</select>
 			</section>
-			-->
 			<?php
 				//if(!isset($_SESSION['block']))
 				//{
-				//	echo "<input type='submit' name='sub' value='Отправить данные'' class='last'>";
+					//echo "<input type='submit' name='sub' value='Отправить данные'' class='last'>";
 				//}				
 			?>
 		</form>
+	-->
 	</body>
 
 </html>
